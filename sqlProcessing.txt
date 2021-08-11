@@ -1,0 +1,17 @@
+
+SQL Statement 
+
+	Parsing
+		Syntax Check
+		Semantics Check
+		Shared Pool Check
+	
+	If Hard Parse
+		Optimization
+		Rows Source Geneartion
+		Execution
+
+	ELSE IF Soft Parse
+		Execution
+
+https://docs.oracle.com/database/121/TGSQL/tgsql_sqlproc.htm#TGSQL176
