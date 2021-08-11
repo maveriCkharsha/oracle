@@ -1,0 +1,2 @@
+rank - leaves gaps
+dense_rank - continuous sequence

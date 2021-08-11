@@ -1,0 +1,4 @@
+char - fixed size
+varchar - allocates all the size irrespective of how much is filled
+	ex: varchar(100) - allocates 100, even though it has only "harsha"(6) in it.
+varchar2 - extends as the data fills in

@@ -1,0 +1,10 @@
+SubQuery - It depends on the inner query. Once the inner query executes, based on the result, the outer query executes. 
+								(or)
+			Inner query is executed first then it gives to outer query and outer query is executed.			
+
+
+Correlated SubQuery - co-related subquery executes for each row returned by main query .
+                      The INNER query is driven by the OUTER query. 
+                      				(or)
+                    Outer query executed first row by row then it based on inner query is executed.
+      SELECT empno,fname,sal,deptid FROM emp e WHERE sal=(SELECT AVG(sal) FROM emp WHERE deptid=e.deptid)

@@ -1,0 +1,8 @@
+When trying to query the same table which is affected with the trigger
+
+			
+We can resolve it by 
+	1. Statement Level Triggers 
+	2. AUTONOMOUS TRANSACTION 
+	3. Compound Triggers 
+	4 Global Temporaray Tables.

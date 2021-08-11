@@ -1,0 +1,12 @@
+Stored Procedure
+
+- may or maynot return a value or can return multiple values
+- DMLs can be included
+
+
+
+Function 
+
+- returns a single value
+- No DML 
+- 

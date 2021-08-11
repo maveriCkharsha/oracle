@@ -1,0 +1,17 @@
+Both DECODE & CASE statements will function like IF-THEN-ELSE statement and they are the alternatives for each other. These functions are used in Oracle to transform the data values.
+
+For Example:
+
+DECODE Function 
+
+Select ORDERNUM,
+DECODE (STATUS,'O', ‘ORDERED’,'P', ‘PACKED,’S’,’SHIPPED’,’A’,’ARRIVED’)
+FROM ORDERS;
+CASE Function
+
+Select ORDERNUM
+, CASE (WHEN STATUS ='O' then ‘ORDERED’
+WHEN STATUS ='P' then PACKED
+WHEN STATUS ='S' then ’SHIPPED’
+ELSE ’ARRIVED’) END
+FROM ORDERS;
