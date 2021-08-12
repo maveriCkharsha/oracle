@@ -1,3 +1,27 @@
+Index By Tables (Associative Arrays)
+
+	- Behave same as arrays except these doesnt have any upper bounds, allowing them to constantly extend
+	- Indexed BY BINARY_INTEGER 
+	- can be extended
+
+Nested Tables
+
+	- Like extension to Index By Tables
+	- Can be stored in the DB
+	- DML operations are possible when stored in the DB
+	- SHould be dense while creation, later it can be deleted
+
+VARRAYS
+
+	- must specify upper bound
+	- can be stored in DB
+	- unlike nested tables individual elements cannot be deleted
+	- always dense
+
+
+
+
+
 Use index by tables when:
 	Your program needs small lookups
 	The collection can be made at runtime in the memory when the package/ procedure is initialized
