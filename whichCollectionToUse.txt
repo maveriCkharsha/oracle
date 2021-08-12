@@ -1,0 +1,19 @@
+Use index by tables when:
+	Your program needs small lookups
+	The collection can be made at runtime in the memory when the package/ procedure is initialized
+	The data volume is unknown beforehand
+	The subscript values are flexible (e.g. strings, negative numbers, non-sequential)
+	You do not need to store the collection in the database
+
+Use nested tables when:
+	The data needs to be stored in the database
+	The number of elements in the collection is not known in advance
+	The elements of the collection may need to be retrieved out of sequence
+	Updates and deletions affect only some elements, at arbitrary locations
+	Your program does not expect to rely on the subscript remaining stable, as their order may change when nested tables are stored in the database.
+
+Use varrays when:
+	The data needs to be stored in the database
+	The number of elements of the varray is known in advance
+	The data from the varray is accessed in sequence
+	Updates and deletions happen on the varray as a whole and not on arbitrarily located elements in the varray
