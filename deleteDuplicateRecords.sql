@@ -9,3 +9,20 @@ WHERE rowid IN (SELECT
     		    FROM 
        			table)
 WHERE t>1);
+
+DELETE  FROM
+    basket a
+        USING basket b
+WHERE
+    a.id > b.id
+    AND a.fruit = b.fruit;
+
+--Incase all records are duplicate
+
+DELETE  FROM
+    basket a
+        USING basket b
+WHERE
+    a = b
+    AND a.ctid > b.ctid;
+    
