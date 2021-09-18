@@ -24,5 +24,5 @@ DELETE  FROM
         USING basket b
 WHERE
     a = b
-    AND a.ctid > b.ctid;
+    AND a.ctid > b.ctid;  -- postgresql
     
